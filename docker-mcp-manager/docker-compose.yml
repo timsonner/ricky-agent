@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  managed-container:
+    image: ubuntu:24.04
+    container_name: managed-container
+    privileged: true
+    tty: true
+    stdin_open: true
+    volumes:
+      - persistent-data:/data
+    command: ["tail", "-f", "/dev/null"]
+
+volumes:
+  persistent-data:

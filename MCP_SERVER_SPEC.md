@@ -247,28 +247,22 @@ if __name__ == "__main__":
 uv run server.py
 ```
 
-### Connecting to Claude for Desktop
+### Connecting to OpenCode
 
-1. Install Claude for Desktop from https://claude.ai/download
-2. Configure the MCP server in Claude's settings:
-   - Location: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows)
-   - Configuration:
-     ```json
-     {
-       "mcpServers": {
-         "your-server-name": {
-           "command": "uv",
-           "args": [
-             "--directory",
-             "/ABSOLUTE/PATH/TO/YOUR/PROJECT",
-             "run",
-             "server.py"
-           ]
-         }
+1. Add the MCP server to `opencode.json` in your project root (or `~/.config/opencode/opencode.json` for global config):
+   ```json
+   {
+     "$schema": "https://opencode.ai/config.json",
+     "mcp": {
+       "your-server-name": {
+         "type": "local",
+         "command": ["python3", "path/to/server.py"],
+         "enabled": true
        }
      }
-     ```
-3. Restart Claude for Desktop
+   }
+   ```
+2. Restart OpenCode to load the MCP server
 
 ## Best Practices
 

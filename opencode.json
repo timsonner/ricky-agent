@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "docker-mcp-manager": {
+      "type": "local",
+      "command": ["python3", "docker-mcp-manager/docker_mcp_server.py"],
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[project]
+name = "docker-mcp-manager"
+version = "0.1.0"
+description = "MCP server for managing Docker containers with persistent storage"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0"
+]

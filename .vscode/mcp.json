@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "docker-container-manager": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "docker-mcp-manager/docker_mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}
