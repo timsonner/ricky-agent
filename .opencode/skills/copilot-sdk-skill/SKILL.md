@@ -1,3 +1,15 @@
+---
+name: copilot-python-sdk
+description: Python SDK for programmatic control of GitHub Copilot CLI via JSON-RPC
+license: MIT
+compatibility: opencode
+metadata:
+  audience: developers
+  workflow: sdk-usage
+  language: python
+  type: sdk
+---
+
 # Copilot Python SDK
 
 Python SDK for programmatic control of GitHub Copilot CLI via JSON-RPC.

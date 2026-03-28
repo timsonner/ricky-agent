@@ -1,3 +1,14 @@
+---
+name: mcp-server
+description: Specification for building Model Context Protocol servers using Python
+license: MIT
+compatibility: opencode
+metadata:
+  audience: developers
+  workflow: server-development
+  language: python
+---
+
 # MCP Server Specification
 
 Based on the Model Context Protocol documentation for building servers.
