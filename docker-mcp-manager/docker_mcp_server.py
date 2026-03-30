@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional
 from mcp.server.fastmcp import FastMCP
 
 # Initialize FastMCP server
-mcp = FastMCP("docker-container-manager")
+mcp = FastMCP("docker-mcp-manager")
 
 # Constants
 CONTAINER_NAME = "managed-container"

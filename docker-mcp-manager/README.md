@@ -62,7 +62,7 @@ You should see the `managed-container` service with status "Up".
 ### 5. Run the MCP server
 
 ```bash
-python docker_mcp_server.py
+python3 docker_mcp_server.py
 ```
 
 The server will start and communicate via stdio (required for MCP STDIO transport).

@@ -6,4 +6,4 @@ echo "Make sure docker-compose is running first:"
 echo "  docker compose up -d"
 echo ""
 echo "Starting MCP server..."
-source .venv/bin/activate && python docker_mcp_server.py
+source .venv/bin/activate && python3 docker_mcp_server.py
