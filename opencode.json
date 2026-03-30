@@ -6,5 +6,71 @@
       "command": ["python3", "docker-mcp-manager/docker_mcp_server.py"],
       "enabled": true
     }
+  },
+  "permission": {
+    "*": "ask",
+    "bash": {
+      "*": "ask",
+      "rm *": "deny",
+      "git *": "ask",
+      "ls *": "allow",
+      "grep *": "allow",
+      "cat *": "allow",
+      "find *": "allow",
+      "mkdir *": "allow",
+      "cp *": "allow",
+      "mv *": "allow",
+      "chmod *": "ask",
+      "chown *": "ask",
+      "sudo *": "deny",
+      "kill *": "ask",
+      "ps *": "allow",
+      "echo *": "allow",
+      "pwd": "allow",
+      "cd *": "allow"
+    },
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.key": "deny",
+      "*.pem": "deny",
+      "*.p12": "deny",
+      "*.pfx": "deny",
+      "*.crt": "deny",
+      "*.cer": "deny",
+      "id_rsa": "deny",
+      "id_dsa": "deny",
+      "id_ecdsa": "deny",
+      "id_ed25519": "deny",
+      ".env.example": "allow"
+    },
+    "edit": {
+      "*": "ask",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.key": "deny",
+      "*.pem": "deny",
+      "*.p12": "deny",
+      "*.pfx": "deny",
+      "*.crt": "deny",
+      "*.cer": "deny"
+    },
+    "write": {
+      "*": "ask",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.key": "deny",
+      "*.pem": "deny",
+      "*.p12": "deny",
+      "*.pfx": "deny",
+      "*.crt": "deny",
+      "*.cer": "deny"
+    },
+    "external_directory": {
+      "~/projects/personal/**": "allow",
+      "~/documents/**": "allow",
+      "~/downloads/**": "ask"
+    }
   }
 }
