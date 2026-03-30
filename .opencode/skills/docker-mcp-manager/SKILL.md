@@ -65,6 +65,26 @@ exists = await check_file_exists("path/to/file.txt")
 - A container named "managed-container" must be running with a volume mounted at /data
 - The container should be started with appropriate privileges for the tools to work correctly
 
+## Getting Started
+
+To start the managed container:
+
+```bash
+docker-compose up -d
+```
+
+This will:
+- Create and start an Ubuntu 22.04 container in privileged mode
+- Mount a persistent volume at `/data` inside the container
+- Keep the container running with a `tail -f /dev/null` command
+
+Verify the container is running:
+```bash
+docker-compose ps
+```
+
+You should see the `managed-container` service with status "Up".
+
 ## Notes
 
 All file paths are relative to the persistent mount point `/data` inside the container.
